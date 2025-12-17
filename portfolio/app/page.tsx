@@ -1,25 +1,15 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div className="font-[inter] bg-zinc-50 dark:bg-black text-text">
-      <header className="fixed w-full h-16 flex justify-between items-center px-4 z-10 bg-background-secondary text-text text-xl top-0">
-        <a className="font-bold text-2xl content-center" href="/">Matthew Adam</a>
-        <nav className="hidden md:flex">
-          <a className="px-4 h-16 cursor-pointer content-center items-center flex hover:bg-background-hover" href="/">Home</a>
-          <a className="px-4 h-16 cursor-pointer content-center items-center flex hover:bg-background-hover" href="/">Projects</a>
-          <a className="px-4 h-16 cursor-pointer content-center items-center flex hover:bg-background-hover" href="/">Skills</a>
-        </nav>
-        <div className="md:hidden z-10 cursor-pointer">
-          <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
-        </div>
-      </header>
-
-      <main className="flex flex-col px-2 sm:px-6">
+      <main className="flex flex-col bg-base-200 px-2 sm:px-6">
         <section id="home" className="page-section flex flex-col md:flex-row gap-10 mt-32 items-center">
-          <img src="/static/media/profilePicture.5e9e216789a6bf72efa0.png" alt="Eddie" className="w-[300px] h-full mx-auto md:mx-0 rounded-lg" />
+          {/* <img src="@/public/portait.jpg" alt="Eddie" className="w-[300px] h-full mx-auto md:mx-0 rounded-lg" /> */}
+          <Image src="/portrait.jpg" alt="Matthew Adam" width={300} height={400} className="w-[300px] h-full mx-auto md:mx-0 rounded-lg" />
           <div className="flex flex-col">
             <p className="text-text font-bold text-xl">Hello, my name is</p>
-            <h1 className="lg:text-7xl text-5xl font-bold text-text py-2">Eddie Stump</h1>
-            <h2 className="text-2xl text-text">I'm an aspiring Software Engineer and Web Developer</h2>
+            <h1 className="lg:text-7xl text-5xl font-bold text-text py-2">Matthew Adam</h1>
+            <h2 className="text-2xl text-text">Mechatronics and Backend Engineer specializing in mechanical design, electrical controls, and database backend systems.</h2>
             <div className="flex flex-row max-[475px]:flex-col md:max-[895px]:flex-col gap-4 pt-6">
               <a href="/" className="button">About Me</a>
               <a href="/" className="button cursor-pointer">Explore my work <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="ml-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg></a>
@@ -27,55 +17,115 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="page-section flex flex-col gap-3 mt-12">
-          <h2 className="title">Projects</h2>
-          <p className="text-text text-lg">Explore some of the projects I've worked on over the years. Click, tap, or hover on the images to explore.</p>
-          <div className="grid grid-cols-1 min-[815px]:grid-cols-2 justify-items-center mx-auto gap-6 lg:gap-14 mt-6">
-            <a href="/" className="max-w-[400px] group rounded-lg bg-background-secondary sm:p-4 p-2 shadow-accent shadow-md">
-              <p className="text-text text-xl font-bold pb-2">Planet Physics</p>
-              <div className="relative overflow-hidden aspect-video rounded-lg">
-                <video src="/static/media/planet-physics-demo.f8c9062687b55ea1eec8.mov" autoPlay loop muted className="w-full h-full object-cover" />
-                <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1 p-4">
-                  <p className="text-text lg:text-lg text-base">As a fun side project during high school, I used equations from an AP physics class to create a 2D orbital mechanics simulation.</p>
-                  <p className="lg:mt-3 mt-1 button-small w-fit">Click to learn more!</p>
-                </div>
-              </div>
-            </a>
 
-            <a href="/" className="max-w-[400px] group rounded-lg bg-background-secondary sm:p-4 p-2 shadow-accent shadow-md">
-              <p className="text-text text-xl font-bold pb-2">Hypixel Player Tracker</p>
-              <div className="relative overflow-hidden aspect-video rounded-lg">
-                <img src="/static/media/hypixel-player-tracker-output.0cc088297329198a78d7.png" alt="Hypixel Player Tracker" />
-                <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1 p-4">
-                  <p className="text-text lg:text-lg text-base">To gain an advantage in my favorite video game, I wrote a Python script that used a custom image-to-text algorithm and the game's API to tell me the skill level of the other players.</p>
-                  <p className="lg:mt-3 mt-1 button-small w-fit">Click to learn more!</p>
-                </div>
-              </div>
-            </a>
 
-            <a href="/" className="max-w-[400px] group rounded-lg bg-background-secondary sm:p-4 p-2 shadow-accent shadow-md">
-              <p className="text-text text-xl font-bold pb-2">Hospital Application</p>
-              <div className="relative overflow-hidden aspect-video rounded-lg">
-                <img src="/static/media/hospital-app-login.2b3279c2466cc1583258.png" alt="Hospital Application" />
-                <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1 p-4">
-                  <p className="text-text lg:text-lg text-base">This project was a mock service request manager and mapping service for Brigham and Women's Hospital. It includes a database, pathfinding, user authentication, and much more.</p>
-                  <p className="lg:mt-3 mt-1 button-small w-fit">Click to learn more!</p>
+        <div className="card w-300 bg-base-100 card-xl shadow-sm">
+          <div className="card-body">
+          <section id="projects">
+            <h2 className="title">Projects</h2>
+            <p className="text-text text-lg">Explore some of the projects I've worked on over the years. Click, tap, or hover on the images to explore.</p>
+            <div className="grid grid-cols-1 min-[815px]:grid-cols-2 justify-items-center mx-auto gap-6 lg:gap-14 mt-6">
+              <a href="/" className="max-w-[400px] group rounded-lg bg-background-secondary sm:p-4 p-2 shadow-accent shadow-md">
+                <p className="text-text text-xl font-bold pb-2">Planet Physics</p>
+                <div className="relative overflow-hidden aspect-video rounded-lg">
+                  <video src="/static/media/planet-physics-demo.f8c9062687b55ea1eec8.mov" autoPlay loop muted className="w-full h-full object-cover" />
+                  <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1 p-4">
+                    <p className="text-text lg:text-lg text-base">As a fun side project during high school, I used equations from an AP physics class to create a 2D orbital mechanics simulation.</p>
+                    <p className="lg:mt-3 mt-1 button-small w-fit">Click to learn more!</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
 
-            <a href="/" className="max-w-[400px] group rounded-lg bg-background-secondary sm:p-4 p-2 shadow-accent shadow-md">
-              <p className="text-text text-xl font-bold pb-2">Visualizations</p>
-              <div className="relative overflow-hidden aspect-video rounded-lg">
-                <video src="/static/media/visualizations.ecf30d9123cef2fe6ddc.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-                <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1 p-4">
-                  <p className="text-text lg:text-lg text-base">As a fun summer project, I created a few visualizations in javascript using HTML canvas graphics.</p>
-                  <p className="lg:mt-3 mt-1 button-small w-fit">Click to learn more!</p>
+              <a href="/" className="max-w-[400px] group rounded-lg bg-background-secondary sm:p-4 p-2 shadow-accent shadow-md">
+                <p className="text-text text-xl font-bold pb-2">Hypixel Player Tracker</p>
+                <div className="relative overflow-hidden aspect-video rounded-lg">
+                  <img src="/static/media/hypixel-player-tracker-output.0cc088297329198a78d7.png" alt="Hypixel Player Tracker" />
+                  <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1 p-4">
+                    <p className="text-text lg:text-lg text-base">To gain an advantage in my favorite video game, I wrote a Python script that used a custom image-to-text algorithm and the game's API to tell me the skill level of the other players.</p>
+                    <p className="lg:mt-3 mt-1 button-small w-fit">Click to learn more!</p>
+                  </div>
                 </div>
+              </a>
+
+              <a href="/" className="max-w-[400px] group rounded-lg bg-background-secondary sm:p-4 p-2 shadow-accent shadow-md">
+                <p className="text-text text-xl font-bold pb-2">Hospital Application</p>
+                <div className="relative overflow-hidden aspect-video rounded-lg">
+                  <img src="/static/media/hospital-app-login.2b3279c2466cc1583258.png" alt="Hospital Application" />
+                  <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1 p-4">
+                    <p className="text-text lg:text-lg text-base">This project was a mock service request manager and mapping service for Brigham and Women's Hospital. It includes a database, pathfinding, user authentication, and much more.</p>
+                    <p className="lg:mt-3 mt-1 button-small w-fit">Click to learn more!</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/" className="max-w-[400px] group rounded-lg bg-background-secondary sm:p-4 p-2 shadow-accent shadow-md">
+                <p className="text-text text-xl font-bold pb-2">Visualizations</p>
+                <div className="relative overflow-hidden aspect-video rounded-lg">
+                  <video src="/static/media/visualizations.ecf30d9123cef2fe6ddc.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                  <div className="absolute top-0 h-full -translate-y-full group-hover:transform-none duration-500 transition-transform bg-background-secondary pt-1 p-4">
+                    <p className="text-text lg:text-lg text-base">As a fun summer project, I created a few visualizations in javascript using HTML canvas graphics.</p>
+                    <p className="lg:mt-3 mt-1 button-small w-fit">Click to learn more!</p>
+                  </div>
+                </div>
+              </a>
+
+
+              {/* Section for the 3D hover cards */}
+              <div className="hover-3d">
+                {/* content */}
+                <figure className="w-60 rounded-2xl">
+                  <img src="https://img.daisyui.com/images/stock/card-1.webp?x" alt="Tailwind CSS 3D card" />
+                </figure>
+                {/* 8 empty divs needed for the 3D effect */}
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
               </div>
-            </a>
+
+              <div className="hover-3d">
+                {/* content */}
+                <figure className="w-60 rounded-2xl">
+                  <img src="https://img.daisyui.com/images/stock/card-2.webp?x" alt="Tailwind CSS 3D hover" />
+                </figure>
+                {/* 8 empty divs needed for the 3D effect */}
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+              <div className="hover-3d">
+                {/* content */}
+                <figure className="w-60 rounded-2xl">
+                  <img src="https://img.daisyui.com/images/stock/card-3.webp?x" alt="Tailwind CSS 3D hover" />
+                </figure>
+                {/* 8 empty divs needed for the 3D effect */}
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+
+            </div>
+          </section>
           </div>
-        </section>
+        </div>
+
+
 
         <section id="skills" className="page-section flex flex-col gap-3 mt-12">
           <h2 className="title">Skills</h2>
@@ -107,6 +157,5 @@ export default function Home() {
           </a>
         </footer>
       </main>
-    </div>
   );
 }
