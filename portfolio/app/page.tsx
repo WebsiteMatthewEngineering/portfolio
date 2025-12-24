@@ -31,7 +31,7 @@ export default function Home() {
                 
 
                 <ProjectCard 
-                  href="https://orbital.matthewengineering.com/"
+                  href="/projects/orbital"
                   title="Planet Physics"
                   shortDescription="A 2D orbital mechanics simulation"
                   longDescription="As a fun side project, I used physical equations to create a realistic 2D orbital mechanics simulation."
@@ -39,46 +39,65 @@ export default function Home() {
                   comingSoon={false}
                 />
 
+
+                {/* Best Ideas */}
                 <ProjectCard 
                   href="/"
-                  title="Placeholder Project"
-                  shortDescription="Example"
-                  longDescription="Example"
+                  title="Postershack"
+                  shortDescription="Purchase AI Generated Posters"
+                  longDescription="Explore a collection of AI generated posters. I created a platform to showcase and sell unique AI art prints."
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
                 />
                 <ProjectCard 
                   href="/"
-                  title="Placeholder Project"
-                  shortDescription="Example"
-                  longDescription="Example"
+                  title="Personalized Youtube"
+                  shortDescription="Youtube transcripts and bookmarked timestamps"
+                  longDescription="Customize your own Youtube experience with transcripts and bookmarked timestamps. Primarily for audiobooks and lectures."
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
                 />
+
+                {/* Tutorial Ideas */}
                 <ProjectCard 
                   href="/"
-                  title="Placeholder Project"
-                  shortDescription="Example"
-                  longDescription="Example"
+                  title="AI Resume Analyzer"
+                  shortDescription="AI Powered Resume Feedback Tool"
+                  longDescription="Get feedback on your resume using AI. I developed a tool that analyzes resumes and provides suggestions for improvement."
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
                 />
+
+
+                {/* Reach Ideas */}
                 <ProjectCard 
                   href="/"
-                  title="Placeholder Project"
-                  shortDescription="Example"
-                  longDescription="Example"
+                  title="Driverseat"
+                  shortDescription="Budgeting and Investing Tool"
+                  longDescription="Take control of your finances with Driverseat. I developed a budgeting and investing tool to help users manage their money effectively."
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
                 />
+
+                {/* Self Hosted */}
                 <ProjectCard 
                   href="/"
-                  title="Placeholder Project"
-                  shortDescription="Example"
-                  longDescription="Example"
+                  title="SearXNG"
+                  shortDescription="Self Hosted Private Search Engine"
+                  longDescription="Private search engines are critical to AI based LLM web searching. I set up and customized my own SearXNG instance."
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
                 />
+
+
+                {/* <ProjectCard 
+                  href="/"
+                  title="N8N Agentic Workflows"
+                  shortDescription="Self Hosted Automation with AI"
+                  longDescription="Automate your workflows with N8N and AI agents. I set up a self hosted instance to explore automation possibilities."
+                  mediaSrc="/skills/skill-python.png"
+                  comingSoon={true}
+                /> */}
 
 
               </div>
