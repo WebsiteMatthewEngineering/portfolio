@@ -18,7 +18,7 @@ export default function Home() {
                 {/* Flex columns for the buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center lg:justify-start">
                   <Button href = "/about-me" children="About Me" />
-                  <Button href = "/" children="Explore My Work >" />
+                  <Button href = "/#projects" children="Explore My Work >" />
                 </div>
               </div>
             </section>
