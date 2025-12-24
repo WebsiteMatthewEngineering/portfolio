@@ -25,11 +25,11 @@ export default function AboutMe() {
             </div>
 
             <div className="max-w-xl mx-auto grid grid-cols-3 gap-4">
-                <img alt="Activity photo" src="/portrait.jpg" className="rounded-lg object-cover w-full h-full" />
-                <img alt="Group activity" src="/portrait.jpg" className="rounded-lg object-cover w-full h-full col-span-2" />
-                <img alt="Outdoor adventure" src="/portrait.jpg" className="rounded-lg object-cover w-full h-full col-span-2" />
-                <img alt="Hobby photo" src="/portrait.jpg" className="rounded-lg object-cover w-full h-full" />
-                <img alt="Scenic view" src="/portrait.jpg" className="rounded-lg object-cover w-full max-h-[300px] col-span-3" />
+                <img alt="Activity photo" src="/about-me/personal/IMG_3275.JPG" className="rounded-lg object-cover w-full h-full" />
+                <img alt="Group activity" src="/about-me/personal/IMG_5160.JPG" className="rounded-lg object-cover w-full h-full col-span-2" />
+                <img alt="Outdoor adventure" src="/about-me/personal/IMG_6149.JPG" className="rounded-lg object-cover w-full h-full col-span-2" />
+                <img alt="Hobby photo" src="/about-me/personal/IMG_4469.JPG" className="rounded-lg object-cover w-full h-full" />
+                <img alt="Scenic view" src="/about-me/personal/IMG_5540.JPG" className="rounded-lg object-cover w-full max-h-[300px] col-span-3" />
             </div>
 
             <p className="text-text text-lg text-justify">
@@ -40,9 +40,9 @@ export default function AboutMe() {
             </p>
 
             <div className="max-w-xl mx-auto grid grid-cols-2 gap-4">
-                <img alt="Project work" src="/portrait.jpg" className="rounded-lg object-cover w-full max-h-[300px]" />
-                <img alt="Innovation moment" src="/portrait.jpg" className="rounded-lg object-cover w-full max-h-[300px]" />
-                <img alt="Team collaboration" src="/portrait.jpg" className="rounded-lg object-cover w-full max-h-[300px] col-span-2" />
+                <img alt="Project work" src="/about-me/lab/IMG_4015.JPG" className="rounded-lg object-cover w-full max-h-[300px]" />
+                <img alt="Innovation moment" src="/about-me/lab/IMG_5942.JPG" className="rounded-lg object-cover w-full max-h-[300px]" />
+                <img alt="Team collaboration" src="/about-me/lab/IMG_5555.jpeg" className="rounded-lg object-cover w-full max-h-[300px] col-span-2" />
             </div>
 
             <Button href="/" className="mx-auto">Return to home page</Button>
