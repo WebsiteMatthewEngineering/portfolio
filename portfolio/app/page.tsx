@@ -7,16 +7,16 @@ export default function Home() {
   return (
       <main className="bg-gray-200">
         <div className="max-w-7xl mx-auto flex flex-col gap-y-20 pt-20 pb-20 px-5">
-            <section id="home" className="card flex flex-row items-center gap-20 scroll-mt-20">
-              <Image src="/portrait.jpg" alt="Matthew Adam" width={300} height={400} className="w-[300px] h-full mx-auto md:mx-0 rounded-lg" />
+            <section id="home" className="card flex flex-col lg:flex-row items-center gap-8 lg:gap-20 scroll-mt-20">
+              <Image src="/MatthewAdamProfessionalHeadshot.jpg" alt="Matthew Adam" width={300} height={400} className="w-[300px] h-full mx-auto lg:mx-0 rounded-lg flex-shrink-0" />
               
               {/* Flex columns for the text on the side  */}
-              <div className="flex flex-col">
-                <p className="text-text font-bold text-xl">Hello, my name is</p>
-                <h1 className="lg:text-7xl text-5xl font-bold text-text py-2">Matthew Adam</h1>
-                <h3 className="text-2xl text-text">Mechatronics and Backend Engineer specializing in mechanical design, electrical controls, and database backend systems.</h3>
+              <div className="flex flex-col text-center lg:text-left">
+                <p className="text-text font-bold text-lg sm:text-xl">Hello, my name is</p>
+                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-text py-2">Matthew Adam</h1>
+                <h3 className="text-lg sm:text-xl lg:text-2xl text-text">Mechatronics and Backend Engineer specializing in mechanical design, electrical controls, and database backend systems.</h3>
                 {/* Flex columns for the buttons */}
-                <div className="flex flex-row max-[475px]:flex-col md:max-[895px]:flex-col gap-4 pt-6">
+                <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center lg:justify-start">
                   <Button href = "/about-me" children="About Me" />
                   <Button href = "/" children="Explore My Work >" />
                 </div>
