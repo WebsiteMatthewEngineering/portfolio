@@ -36,20 +36,20 @@ export default function RootLayout({
         {children}
         
       <footer className="bg-white w-full flex flex-row justify-center gap-4 sm:gap-8 p-4">
-        <a className="flex flex-col" href="/">
-          <img className="sm:h-8 h-6 mx-auto" src="/footer-linkedin.png" alt="LinkedIn icon" />
+        <a className="flex flex-col" href="https://www.linkedin.com/in/matthew-adam-wpi/" target="_blank" rel="noopener noreferrer">
+          <img className="sm:h-8 h-6 mx-auto" src="/footer/footer-linkedin.png" alt="LinkedIn icon" />
           <p className="sm:text-base text-sm text-center">LinkedIn</p>
         </a>
-        <a className="flex flex-col" href="/">
-          <img className="sm:h-8 h-6 mx-auto" src="/footer-github.svg" alt="Github icon" />
+        <a className="flex flex-col" href="https://github.com/MatthewEngineering" target="_blank" rel="noopener noreferrer">
+          <img className="sm:h-8 h-6 mx-auto" src="/footer/footer-github.svg" alt="Github icon" />
           <p className="sm:text-base text-sm text-center">Github</p>
         </a>
-        <a className="flex flex-col" href="/">
-          <img className="sm:h-8 h-6 mx-auto" src="/footer-resume.png" alt="Resume icon" />
+        <a className="flex flex-col" href="/MatthewAdamResume.pdf" target="_blank" rel="noopener noreferrer">
+          <img className="sm:h-8 h-6 mx-auto" src="/footer/footer-resume.png" alt="Resume icon" />
           <p className="sm:text-base text-sm text-center">Resume</p>
         </a>
-        <a className="flex flex-col" href="/">
-          <img className="sm:h-8 h-6 mx-auto" src="/footer-email.svg" alt="Email icon" />
+        <a className="flex flex-col" href="mailto:matthew.adam@saint-gobain.com" target="_blank" rel="noopener noreferrer">
+          <img className="sm:h-8 h-6 mx-auto" src="/footer/footer-email.svg" alt="Email icon" />
           <p className="sm:text-base text-sm text-center">Email</p>
         </a>
       </footer>
