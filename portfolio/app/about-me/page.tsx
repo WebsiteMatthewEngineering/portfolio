@@ -8,8 +8,8 @@ export default function AboutMe() {
         
         <div className="card flex flex-col gap-8 p-8">
             <div className="flex flex-row justify-between items-center mb-4">
-                <h2 className="text-4xl font-bold text-text">About Me</h2>
-                <Button href="/" className="">Return to home page</Button>
+                <h2 className="text-3xl font-bold text-text">About Me</h2>
+                <Button href="/" className="!w-fit !px-4">←</Button>
             </div>
 
             <div className="flex flex-col gap-2">
