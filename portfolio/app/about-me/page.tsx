@@ -14,12 +14,13 @@ export default function AboutMe() {
 
             <div className="flex flex-col gap-2">
                 <p className="text-text text-lg text-justify">
-                    Hi! I'm Matthew, an mechatronics engineer with a passion for new technologies for business impact. 
-                    Currently, I'm working at Omniseal Solutions, a Saint Gobain business focused on delivering precision manufactured high end sealing solutions. 
-                    Feel free to check out my resume linked in the footer at the bottom of the page!
+                    Wecome to my portfolio! I'm Matthew Adam, a mechatronics engineer with a passion for creating business impact with new software and hardware technologies. 
+                    Currently I am a part of <a href="https://www.omniseal-solutions.com/" target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:text-sky-700 underline font-semibold">Omniseal Solutions</a>
+                    , a Saint-Gobain business dedicated to the design and manufacture of precision sealing and wear control solutions. 
+                    Please check out my resume linked in the footer at the bottom of the page!
                 </p>
                 <p className="text-text text-lg text-justify">
-                    Outside of school, I enjoy working on personal projects, building mechatronic systems, and exploring 
+                    I enjoy working on personal projects, building mechatronic systems, and exploring 
                     new technologies. I also enjoy hiking, camping, and spending time with friends and family.
                 </p>
             </div>
@@ -33,7 +34,7 @@ export default function AboutMe() {
             </div>
 
             <p className="text-text text-lg text-justify">
-                During my time at WPI, I've had the opportunity to work on various robotics and engineering 
+                Over the course of my career, I've had the opportunity to work on various robotics and engineering 
                 projects. I've gained experience in mechanical design, electrical systems, programming, and 
                 systems integration. These experiences have shaped my passion for creating innovative solutions 
                 to real-world problems.
