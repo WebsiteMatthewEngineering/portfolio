@@ -35,7 +35,7 @@ export default function RootLayout({
 
         {children}
         
-      <footer className="bg-white w-full flex flex-row justify-center gap-4 sm:gap-8 p-4">
+      <footer className="bg-white w-full flex flex-row justify-center gap-4 sm:gap-8 p-4 relative">
         <a className="flex flex-col" href="https://www.linkedin.com/in/matthew-adam-wpi/" target="_blank" rel="noopener noreferrer">
           <img className="sm:h-8 h-6 mx-auto" src="/footer/footer-linkedin.png" alt="LinkedIn icon" />
           <p className="sm:text-base text-sm text-center">LinkedIn</p>
@@ -52,6 +52,7 @@ export default function RootLayout({
           <img className="sm:h-8 h-6 mx-auto" src="/footer/footer-email.svg" alt="Email icon" />
           <p className="sm:text-base text-sm text-center">Email</p>
         </a>
+        <a href="/private" className="absolute bottom-0 right-0 w-32 h-16 opacity-0 hover:opacity-10 transition-opacity"></a>
       </footer>
 
       </body>
