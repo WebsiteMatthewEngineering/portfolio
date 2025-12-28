@@ -81,12 +81,12 @@ export default function Home() {
 
                 {/* Self Hosted */}
                 <ProjectCard 
-                  href="/"
+                  href="/projects/searxng"
                   title="SearXNG"
                   shortDescription="Self Hosted Private Search Engine"
                   longDescription="Private search engines are critical to AI based LLM web searching. I set up and customized my own SearXNG instance."
                   mediaSrc="/skills/skill-python.png"
-                  comingSoon={true}
+                  comingSoon={false}
                 />
 
 
