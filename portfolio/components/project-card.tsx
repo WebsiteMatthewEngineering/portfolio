@@ -6,6 +6,7 @@ interface ProjectCardProps {
   longDescription: string;
   isVideo?: boolean;
   comingSoon?: boolean;
+  open_new_tab?: boolean;
 }
 import Button from "./button";
 
@@ -16,10 +17,15 @@ export default function ProjectCard({
   shortDescription,
   longDescription,
   isVideo = false,
-  comingSoon = false
+  comingSoon = false, 
+  open_new_tab = false
 }: ProjectCardProps) {
   const CardWrapper = comingSoon ? 'div' : 'a';
-  const wrapperProps = comingSoon ? {} : { href };
+  const wrapperProps = comingSoon 
+    ? {} 
+    : open_new_tab 
+      ? { href, target: '_blank', rel: 'noopener noreferrer' } 
+      : { href };
   
   return (
     <CardWrapper 
