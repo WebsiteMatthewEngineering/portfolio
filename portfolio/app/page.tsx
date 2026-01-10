@@ -39,6 +39,15 @@ export default function Home() {
                   comingSoon={false}
                 />
 
+                <ProjectCard 
+                  href="/projects/bike-simulation"
+                  title="Bike Simulation"
+                  shortDescription="Physics-based bicycle simulator"
+                  longDescription="An interactive bike simulation with realistic physics, balance mechanics, and terrain interaction for an engaging cycling experience."
+                  mediaSrc="/skills/skill-javascript.png"
+                  comingSoon={false}
+                />
+
 
                 {/* Best Ideas */}
                 <ProjectCard 
@@ -71,12 +80,12 @@ export default function Home() {
 
                 {/* Reach Ideas */}
                 <ProjectCard 
-                  href="/"
+                  href="/projects/driverseat"
                   title="Driverseat"
                   shortDescription="Budgeting and Investing Tool"
                   longDescription="Take control of your finances with Driverseat. I developed a budgeting and investing tool to help users manage their money effectively."
                   mediaSrc="/skills/skill-python.png"
-                  comingSoon={true}
+                  comingSoon={false}
                 />
 
                 {/* Self Hosted */}
