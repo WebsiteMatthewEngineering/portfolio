@@ -37,6 +37,15 @@ export default function PrivatePage() {
               open_new_tab={true}
             />
 
+            <ProjectCard 
+              href="https://trendshift.io/"
+              title="Trendshift"
+              shortDescription="Trend Analysis Platform"
+              longDescription="Platform for analyzing and visualizing market trends to make informed business decisions."
+              mediaSrc="/skills/skill-python.png"
+              open_new_tab={true}
+            />
+
           </div>
         </section>
 
