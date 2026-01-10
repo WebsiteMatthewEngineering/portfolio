@@ -78,7 +78,7 @@ export default function PrivatePage() {
               shortDescription="Open Source Airtable Alternative"
               longDescription="Transform your database into a smart spreadsheet. Self-hosted no-code database platform with API support."
               mediaSrc="/skills/skill-python.png"
-              comingSoon={true}
+              comingSoon={false}
             />
 
             <ProjectCard 
