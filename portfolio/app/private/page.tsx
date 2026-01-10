@@ -73,7 +73,7 @@ export default function PrivatePage() {
             />
 
             <ProjectCard 
-              href="/"
+              href="https://nocodb.matthewengineering.com/"
               title="Noco DB"
               shortDescription="Open Source Airtable Alternative"
               longDescription="Transform your database into a smart spreadsheet. Self-hosted no-code database platform with API support."
