@@ -31,7 +31,7 @@ export default function SearXNGProject() {
                     and the integrity of AI-generated responses.
                 </p>
                 <p className="text-text text-lg text-justify">
-                    SearXNG addresses these concerns by providing a self-hosted, privacy-respecting metasearch engine that 
+                    <a href="https://en.wikipedia.org/wiki/Metasearch_engine" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">SearXNG</a> addresses these concerns by providing a self-hosted, privacy-respecting metasearch engine that 
                     aggregates results from multiple search engines without tracking, profiling, or storing user data. This is 
                     particularly important for AI applications where search patterns might reveal sensitive research directions, 
                     proprietary interests, or confidential project details.
