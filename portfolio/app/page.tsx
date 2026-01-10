@@ -44,7 +44,7 @@ export default function Home() {
                   title="Bike Simulation"
                   shortDescription="Physics-based bicycle simulator"
                   longDescription="An interactive bike simulation with realistic physics, balance mechanics, and terrain interaction for an engaging cycling experience."
-                  mediaSrc="/skills/skill-javascript.png"
+                  mediaSrc="/skills/skill-python.png"
                   comingSoon={false}
                 />
 
