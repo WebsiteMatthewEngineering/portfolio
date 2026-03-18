@@ -61,12 +61,18 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-
+      # https://www.youtube.com/watch?v=Z06OyG4i18w
       # https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure
 
       # https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview/menuId~/null
-      # az ad sp create-for-rbac --sdk-auth
+      # az account list --output table 
+      # az ad sp create-for-rbac --role contributor --scopes /subscriptions/<sid> --sdk-auth
       # ^ Output can be used directly as AZURE_CREDENTIALS secret value
+      # {
+      #   "subscriptionId": "",
+      #   "tenant": "",
+      #   "clientId": "" # App registration / Service Principal appId = Client ID for authentication purposes.
+      # }
 
       # Login to Azure
       - name: Azure Login
@@ -86,3 +92,5 @@ jobs:
           imageToDeploy: ghcr.io/websitematthewengineering/portfolio:${{ needs.build.outputs.image-sha }}
           ingress: external
           targetPort: 80
+          registryUsername: ${{ github.actor }}
+          registryPassword: ${{ secrets.GHCR_PAT }}
