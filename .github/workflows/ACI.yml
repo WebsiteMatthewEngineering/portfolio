@@ -36,16 +36,16 @@ jobs:
         id: set-image
         run: |
           IMAGE_SHA=${GITHUB_SHA}
-          docker build -t ghcr.io/matthewengineering/portfolio:latest \
-                       -t ghcr.io/matthewengineering/portfolio:$IMAGE_SHA ./portfolio/.
+          docker build -t ghcr.io/websitematthewengineering/portfolio:latest \
+                       -t ghcr.io/websitematthewengineering/portfolio:$IMAGE_SHA ./portfolio/.
           echo "IMAGE_SHA=$IMAGE_SHA" >> $GITHUB_ENV
           echo "::set-output name=image-sha::$IMAGE_SHA"
 
       # Push Docker image
       - name: Push Docker image
         run: |
-          docker push ghcr.io/matthewengineering/portfolio:latest
-          docker push ghcr.io/matthewengineering/portfolio:${{ env.IMAGE_SHA }}
+          docker push ghcr.io/websitematthewengineering/portfolio:latest
+          docker push ghcr.io/websitematthewengineering/portfolio:${{ env.IMAGE_SHA }}
 
   # ================================
   # 2️⃣ Deploy to Azure Container Apps
@@ -75,6 +75,6 @@ jobs:
         with:
           containerAppName: portfolio
           resourceGroup: myResourceGroup
-          imageToDeploy: ghcr.io/matthewengineering/portfolio:${{ needs.build.outputs.image-sha }}
+          imageToDeploy: ghcr.io/websitematthewengineering/portfolio:${{ needs.build.outputs.image-sha }}
           ingress: external
           targetPort: 80
