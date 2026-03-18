@@ -83,14 +83,14 @@ jobs:
           # tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           # subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      # Deploy to Azure Container Instances
-      - name: Deploy to Azure Container Instances
-        uses: azure/aci-deploy@v1
+      # Deploy to Azure Container Apps
+      - name: Deploy to Azure Container Apps
+        uses: azure/container-apps-deploy-action@v2
         with:
-          resource-group: myResourceGroup
-          name: portfolio
-          image: ghcr.io/websitematthewengineering/portfolio:${{ needs.build.outputs.image-sha }}
-          dns-name-label: portfolio
-          location: eastus
-          registry-username: ${{ github.actor }}
-          registry-password: ${{ secrets.GHCR_PAT }}
+          containerAppName: portfolio
+          resourceGroup: myResourceGroup
+          imageToDeploy: ghcr.io/websitematthewengineering/portfolio:${{ needs.build.outputs.image-sha }}
+          ingress: external
+          targetPort: 80
+          registryUsername: ${{ github.actor }}
+          registryPassword: ${{ secrets.GHCR_PAT }}
