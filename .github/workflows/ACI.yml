@@ -58,8 +58,8 @@ jobs:
       contents: read
     steps:
       # Checkout (optional)
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      # - name: Checkout repo
+      #   uses: actions/checkout@v4
 
       # https://www.youtube.com/watch?v=Z06OyG4i18w
       # https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure
@@ -91,6 +91,6 @@ jobs:
           resourceGroup: myResourceGroup
           imageToDeploy: ghcr.io/websitematthewengineering/portfolio:${{ needs.build.outputs.image-sha }}
           ingress: external
-          targetPort: 80
-          registryUsername: ${{ github.actor }}
-          registryPassword: ${{ secrets.GHCR_PAT }}
+          targetPort: 3000
+          # registryUsername: ${{ github.actor }}
+          # registryPassword: ${{ secrets.GHCR_PAT }}
