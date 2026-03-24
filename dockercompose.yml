@@ -1,0 +1,15 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nextjs-app
+    environment:
+      - NODE_ENV=production
+      
+    networks:
+      - nginx_proxy
+
+networks:
+  nginx_proxy:
+    external: true
