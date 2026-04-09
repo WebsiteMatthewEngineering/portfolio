@@ -50,7 +50,7 @@ export default function Home() {
 
 
                 {/* Best Ideas */}
-                <ProjectCard 
+                {/* <ProjectCard 
                   href="/"
                   title="Postershack"
                   shortDescription="Purchase AI Generated Posters"
@@ -65,17 +65,17 @@ export default function Home() {
                   longDescription="Customize your own Youtube experience with transcripts and bookmarked timestamps. Primarily for audiobooks and lectures."
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
-                />
+                /> */}
 
                 {/* Tutorial Ideas */}
-                <ProjectCard 
+                {/* <ProjectCard 
                   href="/"
                   title="AI Resume Analyzer"
                   shortDescription="AI Powered Resume Feedback Tool"
                   longDescription="Get feedback on your resume using AI. I developed a tool that analyzes resumes and provides suggestions for improvement."
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
-                />
+                /> */}
 
 
                 {/* Reach Ideas */}
