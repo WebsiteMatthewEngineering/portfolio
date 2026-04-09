@@ -1,0 +1,40 @@
+name: Deploy Portfolio
+
+on:
+  workflow_call:
+    inputs:
+      image-sha:
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      image-sha:
+        description: Image SHA to deploy (defaults to latest)
+        required: false
+        default: latest
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy portfolio to Lightsail
+        uses: appleboy/ssh-action@v1.0.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IMAGE_SHA: ${{ inputs.image-sha }}
+        with:
+          host: ${{ vars.LIGHTSAIL_HOST }}
+          username: ${{ vars.LIGHTSAIL_USER }}
+          key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
+          envs: GITHUB_TOKEN,IMAGE_SHA
+          script: |
+            echo "$GITHUB_TOKEN" | docker login ghcr.io -u websitematthewengineering --password-stdin
+            docker pull ghcr.io/websitematthewengineering/portfolio:${IMAGE_SHA:-latest}
+            docker stop portfolio || true
+            docker rm portfolio || true
+            docker run -d \
+              --name portfolio \
+              --restart unless-stopped \
+              --network nginx_proxy \
+              ghcr.io/websitematthewengineering/portfolio:${IMAGE_SHA:-latest}

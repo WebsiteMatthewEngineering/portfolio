@@ -47,6 +47,18 @@ jobs:
           docker push ghcr.io/websitematthewengineering/portfolio:latest
           docker push ghcr.io/websitematthewengineering/portfolio:${{ env.IMAGE_SHA }}
 
+
+  # ================================
+  # 2️⃣ Deploy to Lightsail
+  # ================================
+  deploy:
+    needs: build
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
+    with:
+      image-sha: ${{ needs.build.outputs.image-sha }}
+
+
   # ================================
   # 2️⃣ Deploy to Azure Container Apps
   # ================================
