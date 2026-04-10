@@ -38,7 +38,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: Dockerfile.backend
+          file: ./portfolio/Dockerfile
           push: true
           cache-from: type=registry,ref=ghcr.io/websitematthewengineering/portfolio:cache
           cache-to:   type=registry,ref=ghcr.io/websitematthewengineering/portfolio:cache,mode=max
