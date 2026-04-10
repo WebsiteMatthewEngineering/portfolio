@@ -37,8 +37,8 @@ jobs:
       - name: Build and push backend Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./portfolio/Dockerfile
+          context: ./portfolio
+          file: Dockerfile
           push: true
           cache-from: type=registry,ref=ghcr.io/websitematthewengineering/portfolio:cache
           cache-to:   type=registry,ref=ghcr.io/websitematthewengineering/portfolio:cache,mode=max
