@@ -1,0 +1,24 @@
+name: Build and Deploy Lightsail
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  # ================================
+  # 1️⃣ Build & Push Docker Image
+  # ================================
+  build:
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+
+  # ================================
+  # 2️⃣ Deploy to Lightsail
+  # ================================
+  deploy-lightsail:
+    needs: build
+    uses: ./.github/workflows/deploy-lightsail.yml
+    secrets: inherit
+    with:
+      image-sha: latest

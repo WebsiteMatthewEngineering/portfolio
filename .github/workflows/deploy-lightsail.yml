@@ -1,4 +1,4 @@
-name: Deploy Portfolio
+name: Deploy Container Lightsail
 
 on:
   workflow_call:
@@ -7,12 +7,6 @@ on:
         required: true
         type: string
   workflow_dispatch:
-    inputs:
-      image-sha:
-        description: Image SHA to deploy (defaults to latest)
-        required: false
-        default: latest
-        type: string
 
 jobs:
   deploy:
