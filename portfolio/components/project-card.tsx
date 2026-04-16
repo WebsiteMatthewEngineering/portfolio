@@ -34,21 +34,21 @@ export default function ProjectCard({
     >
 
       <p className="text-text text-xl font-bold pb-2">{title} </p>
-      <div className="relative overflow-hidden aspect-video rounded-lg">
+      <div className="relative overflow-hidden aspect rounded-lg mx-4">
           <div className="group-hover:translate-y-full transition-transform duration-500">
             <p className="text-text text-sm sm:text-base pb-3">{shortDescription}</p>
             {isVideo ? (
-              <video 
-                src={mediaSrc} 
-                autoPlay 
-                loop 
+              <video
+                src={mediaSrc}
+                autoPlay
+                loop
                 muted
                 className="w-full h-full object-cover"
               />
             ) : (
-              <img 
-                src={mediaSrc} 
-                alt={title} 
+              <img
+                src={mediaSrc}
+                alt={title}
                 className="w-full h-full object-cover"
               />
             )}

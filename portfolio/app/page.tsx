@@ -35,7 +35,7 @@ export default function Home() {
                   title="Planet Physics"
                   shortDescription="A 2D orbital mechanics simulation"
                   longDescription="As a fun side project, I used physical equations to create a realistic 2D orbital mechanics simulation."
-                  mediaSrc="/skills/skill-python.png"
+                  mediaSrc="/projects/orbital/thumbnail.png"
                   comingSoon={false}
                 />
 
@@ -44,7 +44,7 @@ export default function Home() {
                   title="Bike Simulation"
                   shortDescription="Physics-based bicycle simulator"
                   longDescription="An interactive bike simulation with realistic physics, balance mechanics, and terrain interaction for an engaging cycling experience."
-                  mediaSrc="/skills/skill-python.png"
+                  mediaSrc="/projects/bike-simulation/thumbnail.png"
                   comingSoon={false}
                 />
 
@@ -54,7 +54,7 @@ export default function Home() {
                   title="SearXNG"
                   shortDescription="Self Hosted Private Search Engine"
                   longDescription="Private search engines are critical to AI based LLM web searching. I set up and customized my own SearXNG instance."
-                  mediaSrc="/skills/skill-python.png"
+                  mediaSrc="/projects/searxng/image.png"
                   comingSoon={false}
                 />
 
@@ -64,7 +64,7 @@ export default function Home() {
                   title="Robotic Arm Simulator"
                   shortDescription=""
                   longDescription=""
-                  mediaSrc="/skills/skill-python.png"
+                  mediaSrc="/default.png"
                   comingSoon={true}
                 />
 
@@ -73,7 +73,7 @@ export default function Home() {
                   title="Robotic Fleet Simulator"
                   shortDescription=""
                   longDescription=""
-                  mediaSrc="/skills/skill-python.png"
+                  mediaSrc="/default.png"
                   comingSoon={true}
                 />
 
@@ -84,7 +84,7 @@ export default function Home() {
                   title="Postershack"
                   shortDescription="Purchase AI Generated Posters"
                   longDescription="Explore a collection of AI generated posters. I created a platform to showcase and sell unique AI art prints."
-                  mediaSrc="/skills/skill-python.png"
+                  mediaSrc="/default.png"
                   comingSoon={true}
                 />
 
