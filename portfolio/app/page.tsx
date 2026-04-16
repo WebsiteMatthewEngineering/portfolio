@@ -48,9 +48,38 @@ export default function Home() {
                   comingSoon={false}
                 />
 
+                {/* Self Hosted */}
+                <ProjectCard 
+                  href="/projects/searxng"
+                  title="SearXNG"
+                  shortDescription="Self Hosted Private Search Engine"
+                  longDescription="Private search engines are critical to AI based LLM web searching. I set up and customized my own SearXNG instance."
+                  mediaSrc="/skills/skill-python.png"
+                  comingSoon={false}
+                />
 
-                {/* Best Ideas */}
-                {/* <ProjectCard 
+                {/* NEXT UP */}
+                <ProjectCard 
+                  href="/"
+                  title="Robotic Arm Simulator"
+                  shortDescription=""
+                  longDescription=""
+                  mediaSrc="/skills/skill-python.png"
+                  comingSoon={true}
+                />
+
+                <ProjectCard 
+                  href="/"
+                  title="Robotic Fleet Simulator"
+                  shortDescription=""
+                  longDescription=""
+                  mediaSrc="/skills/skill-python.png"
+                  comingSoon={true}
+                />
+
+
+
+                <ProjectCard 
                   href="/"
                   title="Postershack"
                   shortDescription="Purchase AI Generated Posters"
@@ -58,7 +87,23 @@ export default function Home() {
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
                 />
-                <ProjectCard 
+
+
+
+                {/* LATER PROBLEMS */}
+
+                {/* <ProjectCard 
+                  href="/"
+                  title="N8N Agentic Workflows"
+                  shortDescription="Self Hosted Automation with AI"
+                  longDescription="Automate your workflows with N8N and AI agents. I set up a self hosted instance to explore automation possibilities."
+                  mediaSrc="/skills/skill-python.png"
+                  comingSoon={true}
+                /> */}
+
+
+                {/* Best Ideas */}
+                {/* <ProjectCard 
                   href="/"
                   title="Personalized Youtube"
                   shortDescription="Youtube transcripts and bookmarked timestamps"
@@ -73,37 +118,6 @@ export default function Home() {
                   title="AI Resume Analyzer"
                   shortDescription="AI Powered Resume Feedback Tool"
                   longDescription="Get feedback on your resume using AI. I developed a tool that analyzes resumes and provides suggestions for improvement."
-                  mediaSrc="/skills/skill-python.png"
-                  comingSoon={true}
-                /> */}
-
-
-                {/* Reach Ideas */}
-                <ProjectCard 
-                  href="/projects/driverseat"
-                  title="Driverseat"
-                  shortDescription="Budgeting and Investing Tool"
-                  longDescription="Take control of your finances with Driverseat. I developed a budgeting and investing tool to help users manage their money effectively."
-                  mediaSrc="/skills/skill-python.png"
-                  comingSoon={false}
-                />
-
-                {/* Self Hosted */}
-                <ProjectCard 
-                  href="/projects/searxng"
-                  title="SearXNG"
-                  shortDescription="Self Hosted Private Search Engine"
-                  longDescription="Private search engines are critical to AI based LLM web searching. I set up and customized my own SearXNG instance."
-                  mediaSrc="/skills/skill-python.png"
-                  comingSoon={false}
-                />
-
-
-                {/* <ProjectCard 
-                  href="/"
-                  title="N8N Agentic Workflows"
-                  shortDescription="Self Hosted Automation with AI"
-                  longDescription="Automate your workflows with N8N and AI agents. I set up a self hosted instance to explore automation possibilities."
                   mediaSrc="/skills/skill-python.png"
                   comingSoon={true}
                 /> */}

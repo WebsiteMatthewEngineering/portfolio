@@ -20,6 +20,16 @@ export default function PrivatePage() {
             />
 
             <ProjectCard 
+              href="/projects/driverseat"
+              title="Driverseat"
+              shortDescription="Budgeting and Investing Tool"
+              longDescription="Take control of your finances with Driverseat. I developed a budgeting and investing tool to help users manage their money effectively."
+              mediaSrc="/skills/skill-python.png"
+              comingSoon={false}
+            />
+
+
+            <ProjectCard 
               href="https://railway.com/dashboard/"
               title="Railway"
               shortDescription="Cloud Deployment Platform"
