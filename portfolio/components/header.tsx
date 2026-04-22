@@ -8,7 +8,7 @@ export default function Header() {
     return ( 
       <>
         <header className="sticky w-full h-16 flex justify-between items-center px-4 z-10 bg-white text-black text-xl top-0">
-          <a className="font-bold text-2xl content-center" href="/">Matthew Adam</a>
+          <a className="font-bold text-2xl content-center" href="/">Simulation Engineering Team</a>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex">

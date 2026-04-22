@@ -56,8 +56,7 @@ export default function ProjectCard({
         <div className="absolute top-0 left-0 w-full h-full -translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-background-secondary p-4 z-10">
           <p className="text-text lg:text-lg text-base">{longDescription}</p>
           <p className="lg:mt-3 mt-1 text-sky-400 font-semibold">
-            Click to learn more!
-            {/* {comingSoon ? 'Coming Soon' : 'Click to learn more!'} */}
+            {comingSoon ? "Preview case study" : "Click to learn more!"}
           </p>
         </div>
       </div>
