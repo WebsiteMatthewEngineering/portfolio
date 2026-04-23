@@ -88,6 +88,41 @@ export default function Home() {
                   comingSoon={true}
                 />
 
+{/* 
+                <ProjectCard 
+                  href="/"
+                  title="Ray Tracer" # bascially any C++ project. JSF and F' Prime C++ flight standard C++ could be cool here 
+                  shortDescription=""
+                  longDescription=""
+                  mediaSrc="/default.png"
+                  comingSoon={true}
+                />
+ */}
+
+                {/* LATER PROBLEMS - Calculix */}
+
+{/* 
+                <ProjectCard 
+                  href="/"
+                  title="Calculix Simulation"
+                  shortDescription=""
+                  longDescription=""
+                  mediaSrc="/default.png"
+                  comingSoon={true}
+                />
+ */}
+
+
+{/* 
+                <ProjectCard 
+                  href="/"
+                  title="AI Generated STL Files" # for use in the calculix simulation???
+                  shortDescription=""
+                  longDescription=""
+                  mediaSrc="/default.png"
+                  comingSoon={true}
+                />
+*/}
 
 
                 {/* LATER PROBLEMS */}
