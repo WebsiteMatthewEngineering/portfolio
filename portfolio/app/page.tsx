@@ -58,6 +58,16 @@ export default function Home() {
                   comingSoon={false}
                 />
 
+                <ProjectCard
+                  href="/projects/postershack"
+                  title="Postershack"
+                  shortDescription="Purchase AI Generated Posters"
+                  longDescription="Explore a collection of AI generated posters. I created a platform to showcase and sell unique AI art prints."
+                  mediaSrc="/projects/postershack/postershack.webp"
+                />
+
+
+
                 {/* NEXT UP */}
                 <ProjectCard 
                   href="/"
@@ -75,16 +85,6 @@ export default function Home() {
                   longDescription=""
                   mediaSrc="/default.png"
                   comingSoon={true}
-                />
-
-
-
-                <ProjectCard
-                  href="/projects/postershack"
-                  title="Postershack"
-                  shortDescription="Purchase AI Generated Posters"
-                  longDescription="Explore a collection of AI generated posters. I created a platform to showcase and sell unique AI art prints."
-                  mediaSrc="/projects/postershack/postershack.webp"
                 />
 
 {/* 
