@@ -79,13 +79,12 @@ export default function Home() {
 
 
 
-                <ProjectCard 
-                  href="/"
+                <ProjectCard
+                  href="/projects/postershack"
                   title="Postershack"
                   shortDescription="Purchase AI Generated Posters"
                   longDescription="Explore a collection of AI generated posters. I created a platform to showcase and sell unique AI art prints."
-                  mediaSrc="/default.png"
-                  comingSoon={true}
+                  mediaSrc="/projects/postershack/postershack.webp"
                 />
 
 {/* 
