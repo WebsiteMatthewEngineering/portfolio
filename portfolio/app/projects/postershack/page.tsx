@@ -3,8 +3,8 @@ import Button from "@/components/button";
 function Buttons() {
     return (
         <div className="flex flex-row justify-center mt-6 gap-5">
-            <Button href="https://postershackapi.matthewengineering.com" className="mx-" new_tab={true}>Visit Postershack</Button>
-            <Button href="https://github.com/matthewengineering/postershack" className="mx-" new_tab={true}>View on GitHub</Button>
+            <Button href="https://postershack-api.matthewengineering.com/" className="mx-" new_tab={true}>Visit Postershack</Button>
+            {/* <Button href="https://github.com/matthewengineering/postershack" className="mx-" new_tab={true}>View on GitHub</Button> */}
         </div>
     )
 }
