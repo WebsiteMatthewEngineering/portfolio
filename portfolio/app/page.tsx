@@ -69,18 +69,18 @@ export default function Home() {
 
 
                 {/* NEXT UP */}
-                <ProjectCard 
+                {/* <ProjectCard 
                   href="/"
                   title="Robotic Arm Simulator"
                   shortDescription=""
                   longDescription=""
                   mediaSrc="/default.png"
                   comingSoon={true}
-                />
+                /> */}
 
                 <ProjectCard 
                   href="/"
-                  title="Robotic Fleet Simulator"
+                  title="NASA Fleet: Otherworldly Robotics"
                   shortDescription=""
                   longDescription=""
                   mediaSrc="/default.png"
@@ -98,18 +98,14 @@ export default function Home() {
                 />
  */}
 
-                {/* LATER PROBLEMS - Calculix */}
-
-{/* 
-                <ProjectCard 
-                  href="/"
-                  title="Calculix Simulation"
-                  shortDescription=""
-                  longDescription=""
-                  mediaSrc="/default.png"
-                  comingSoon={true}
+                <ProjectCard
+                  href="/learn/calculix"
+                  title="Learn CalculiX"
+                  shortDescription="Open-source FEA simulation guide"
+                  longDescription="A practical introduction to CalculiX — the free finite element analysis solver used for structural, thermal, and modal simulations."
+                  mediaSrc="/projects/calculix/parachute.gif"
+                  comingSoon={false}
                 />
- */}
 
 
 {/* 
