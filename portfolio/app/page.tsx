@@ -84,7 +84,9 @@ export default function Home() {
                   shortDescription=""
                   longDescription=""
                   mediaSrc="/default.png"
-                  comingSoon={true}
+                  comingSoon={true}  // robotfleet.matthewengineering.com
+
+                  // https://github.com/nasa-jpl/rosa
                 />
 
 {/* 

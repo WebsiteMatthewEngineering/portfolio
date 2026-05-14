@@ -3,8 +3,8 @@ import Button from "@/components/button";
 function Buttons() {
     return (
         <div className="flex flex-row justify-center mt-6 gap-5">
-            <Button href="https://postershack-api.matthewengineering.com/" className="mx-" new_tab={true}>Visit Postershack</Button>
-            {/* <Button href="https://github.com/matthewengineering/postershack" className="mx-" new_tab={true}>View on GitHub</Button> */}
+            <Button href="https://postershack-api.matthewengineering.com/" new_tab={true}>Visit Postershack</Button>
+            {/* <Button href="https://github.com/matthewengineering/postershack" new_tab={true}>View on GitHub</Button> */}
         </div>
     )
 }
@@ -17,7 +17,7 @@ export default function PostershackProject() {
         <div className="card flex flex-col gap-8 p-8">
             <div className="flex flex-row justify-between items-center mb-4">
                 <h2 className="text-3xl sm:text-4xl font-bold text-text">Postershack</h2>
-                <Button href="/" className="!w-fit !px-4">←</Button>
+                <Button href="/" className="mx-">←</Button>
             </div>
 
             <Buttons />
@@ -55,17 +55,17 @@ export default function PostershackProject() {
                     <img
                         alt="Example poster 1"
                         src="/projects/postershack/poster1.webp"
-                        className="rounded-lg object-cover w-full aspect-[2/3] shadow"
+                        className="rounded-lg object-cover w-full aspect-2/3 shadow"
                     />
                     <img
                         alt="Example poster 2"
                         src="/projects/postershack/poster2.webp"
-                        className="rounded-lg object-cover w-full aspect-[2/3] shadow"
+                        className="rounded-lg object-cover w-full aspect-2/3 shadow"
                     />
                     <img
                         alt="Example poster 3"
                         src="/projects/postershack/poster3.webp"
-                        className="rounded-lg object-cover w-full aspect-[2/3] shadow"
+                        className="rounded-lg object-cover w-full aspect-2/3 shadow"
                     />
                 </div>
             </div>

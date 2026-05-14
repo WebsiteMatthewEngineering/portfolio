@@ -213,12 +213,12 @@ cgx -b convert.fbd`}</code></pre>
                 <ul className="text-text text-sm space-y-2">
                   <li>
                     <div className="flex flex-row justify-center mt-4 gap-5">
-                      <Button href="http://www.dhondt.de/" new_tab={true} className="!w-fit !px-4">CalculiX Homepage</Button>
+                      <Button href="http://www.dhondt.de/" new_tab={true} className="mx-">CalculiX Homepage</Button>
                     </div> 
                   </li>
                   <li className="mt-2">
                     <div className="flex flex-row justify-center mt-4 gap-5">
-                      <Button href="http://www.dhondt.de/ccx_2.22.pdf" new_tab={true} className="!w-fit !px-4">CCX User Manual (PDF)</Button>
+                      <Button href="http://www.dhondt.de/ccx_2.22.pdf" new_tab={true} className="mx-">CCX User Manual (PDF)</Button>
                     </div> 
                   </li>
                 </ul>
@@ -228,7 +228,7 @@ cgx -b convert.fbd`}</code></pre>
                 <ul className="text-text text-sm space-y-2">
                   <li>
                     <div className="flex flex-row justify-center mt-4 gap-5">
-                      <Button href="https://www.feaforall.com/category/calculix/" new_tab={true} className="!w-fit !px-4">FEA For All — CalculiX Tutorials</Button>
+                      <Button href="https://www.feaforall.com/category/calculix/" new_tab={true} className="mx-">FEA For All — CalculiX Tutorials</Button>
                     </div> 
                   </li>
                   <li className="mt-2">
