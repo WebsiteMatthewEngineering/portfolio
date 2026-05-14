@@ -116,6 +116,10 @@ export default function NasaFleetProject() {
                 </p>
             </div>
 
+            <div className="max-w-4xl mx-auto">
+                <img alt="NASA Fleet helicopters spelling a word in formation" src="/projects/nasa-fleet/NASA-Writing.png" className="rounded-lg object-cover w-full shadow-lg" />
+            </div>
+
             <div className="flex flex-col gap-4">
                 <h3 className="text-2xl font-semibold text-text">Technical Stack</h3>
                 <p className="text-text text-lg">

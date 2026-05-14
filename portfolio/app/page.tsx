@@ -117,16 +117,26 @@ export default function Home() {
                 />
 
 
-{/* 
-                <ProjectCard 
+                <ProjectCard
                   href="/"
-                  title="AI Generated STL Files" # for use in the calculix simulation???
-                  shortDescription=""
+                  title="Driverseat"
+                  shortDescription="Finance Software"
                   longDescription=""
                   mediaSrc="/default.png"
                   comingSoon={true}
                 />
-*/}
+
+
+
+                {/* <ProjectCard 
+                  href="/"
+                  title="LLM Modifying STL Files" // # for use in the calculix simulation???
+                  shortDescription=""
+                  longDescription=""
+                  mediaSrc="/default.png"
+                  comingSoon={true}
+                /> */}
+
 
 
                 {/* LATER PROBLEMS */}
@@ -152,14 +162,14 @@ export default function Home() {
                 /> */}
 
                 {/* Tutorial Ideas */}
-                {/* <ProjectCard 
+                <ProjectCard 
                   href="/"
                   title="AI Resume Analyzer"
                   shortDescription="AI Powered Resume Feedback Tool"
                   longDescription="Get feedback on your resume using AI. I developed a tool that analyzes resumes and provides suggestions for improvement."
-                  mediaSrc="/skills/skill-python.png"
+                  mediaSrc="/default.png"
                   comingSoon={true}
-                /> */}
+                />
 
 
               </div>
