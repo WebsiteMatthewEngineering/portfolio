@@ -87,15 +87,13 @@ export default function Home() {
                   comingSoon={true}
                 /> */}
 
-                <ProjectCard 
-                  href="/"
+                <ProjectCard
+                  href="/projects/nasa-fleet"
                   title="NASA Fleet: Otherworldly Robotics"
-                  shortDescription=""
-                  longDescription=""
-                  mediaSrc="/default.png"
-                  comingSoon={true}  // robotfleet.matthewengineering.com
-
-                  // https://github.com/nasa-jpl/rosa
+                  shortDescription="LLM-orchestrated NASA robot fleet"
+                  longDescription="A browser-based ROS2 simulator where Ingenuity helicopters and Perseverance rovers are orchestrated by LLM agents using NASA JPL's ROSA, across lifelike Mars, Earth, and city scenes."
+                  mediaSrc="/projects/nasa-fleet/Thumbnail.png"
+                  comingSoon={false}
                 />
 
 {/* 
