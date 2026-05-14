@@ -3,8 +3,8 @@ import Button from "@/components/button";
 function Buttons() {
     return (
         <div className="flex flex-row flex-wrap justify-center mt-6 gap-5">
-            <Button href="https://fleet.matthewengineering.com" className="mx-" new_tab={true}>Visit Live Demo</Button>
-            <Button href="https://github.com/MatthewEngineering/RobotArm" className="mx-" new_tab={true}>View on GitHub</Button>
+            <Button href="https://robotfleet.matthewengineering.com" className="mx-" new_tab={true}>Visit Live Demo</Button>
+            {/* <Button href="https://github.com/MatthewEngineering/RobotArm" className="mx-" new_tab={true}>View on GitHub</Button> */}
         </div>
     )
 }
@@ -124,6 +124,16 @@ export default function NasaFleetProject() {
                     frontend using <strong>roslibjs</strong> and <strong>three.js</strong>. The entire stack — ROS,
                     Gazebo, Xvfb/noVNC, and the Node app — is packaged into a single Docker image and deployed to{" "}
                     <strong>Azure Container Apps</strong> with infrastructure defined in <strong>Terraform</strong>.
+                </p>
+                <p className="text-text text-lg">
+                    The ROS2 nodes themselves are written in <strong>C++</strong> — the same language used for
+                    production flight software. The only abstraction in this project is that I bypassed the low-level
+                    helicopter controls: incoming commands to the node currently return position changes directly rather
+                    than driving simulated motors. There's no reason these nodes couldn't be wired up to real production
+                    flight software written in <a href="https://github.com/nasa/fprime" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">F´ (F Prime)</a>,  
+                    <a href="https://niccs.cisa.gov/training/catalog/tonex/best-practices-coding-safety-critical-software-misra-cc-and-jsf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">JSF</a>, or
+                    another safety-critical C++ standard used for spacecraft and aerial vehicles — the topic interface stays the same,
+                    only the control loop underneath changes.
                 </p>
                 <p className="text-text text-lg">
                     The AI layer is implemented on top of <a href="https://github.com/nasa-jpl/rosa" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-semibold">NASA JPL's ROSA</a> (installed
