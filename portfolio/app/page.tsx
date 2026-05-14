@@ -59,6 +59,15 @@ export default function Home() {
                 />
 
                 <ProjectCard
+                  href="/projects/markdown-projects"
+                  title="Markdown Projects"
+                  shortDescription="VS Code Kanban from markdown"
+                  longDescription="A VS Code extension that renders markdown files as a Kanban / list project board, keeping your tasks in plain text alongside your code."
+                  mediaSrc="/projects/markdown-projects/thumbnail.png"
+                  comingSoon={false}
+                />
+
+                <ProjectCard
                   href="/projects/postershack"
                   title="Postershack"
                   shortDescription="Purchase AI Generated Posters"
